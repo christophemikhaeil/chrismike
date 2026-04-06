@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chris Mike : DJ et animateur événementiel dans l'Hérault (34). Mariages, anniversaires et soirées privées de Montpellier à Béziers.">
+    <title>Chris Mike | DJ & Animation Événementielle Hérault (34)</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Chris Mike Animation Événementielle",
+      "image": "https://chrismike.fr/ChrisMikeLogo.png",
+      "@id": "",
+      "url": "https://chrismike.fr",
+      "telephone": "+33609715017",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ceyras",
+        "addressRegion": "Hérault",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.6512,
+        "longitude": 3.4628
+      },
+      "areaServed": [
+    	{ "@type": "City", "name": "Montpellier" },
+    	{ "@type": "City", "name": "Béziers" },
+    	{ "@type": "City", "name": "Sète" },
+    	{ "@type": "City", "name": "Agde" },
+    	{ "@type": "City", "name": "Lunel" },
+    	{ "@type": "City", "name": "Frontignan" },
+    	{ "@type": "City", "name": "Mauguio" },
+    	{ "@type": "City", "name": "Clermont l'hérault" },
+    	{ "@type": "AdministrativeArea", "name": "Hérault" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "18:00",
+          "closes": "05:00"
+        }
+      ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-deep: #002a4a;
+            --bg-card: #00375f; /* Ton bleu logo */
+            --primary: #c78153; /* Ton cuivre logo */
+            --accent: #e5a67c;
+            --text-main: #f8fafc;
+            --text-dim: #cbd5e1;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: radial-gradient(circle at top right, rgba(199, 129, 83, 0.15), transparent);
+        }
+
+        .logo-main {
+            width: 280px;
+            height: auto;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+            margin-bottom: 2rem;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 8vw, 3.5rem);
+            font-weight: 800;
+            margin: 1rem 0;
+            letter-spacing: -1px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .btn-cta {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 18px 45px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(199, 129, 83, 0.4);
+        }
+
+        .btn-cta:hover {
+            background: var(--accent);
+            transform: scale(1.05);
+        }
+
+        .geo-badge {
+            background: rgba(255,255,255,0.05);
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Formulaire Section */
+        .contact-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(199, 129, 83, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        input, select, textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 15px;
+            border-radius: 8px;
+            color: white;
+            font-family: inherit;
+            transition: 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        footer { text-align: center; padding: 60px 20px; opacity: 0.6; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
+
+        @media (max-width: 768px) {
+            .hero { padding: 60px 20px; }
+            .form-row { grid-template-columns: 1fr; }
+            .contact-form { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <img src="ChrisMikeLogo.png" alt="Chris Mike Animation Événementielle" class="logo-main" loading="eager">
+        <div class="tagline">Animation & Sonorisation</div>
+        <h1>L'excellence pour vos soirées dans l'Hérault.</h1>
+        <div class="geo-badge">📍 Montpellier • Béziers • Sète • Agde • Clermont-l'hérault • Lodève</div>
+        <br>
+        <a href="#contact" class="btn-cta">Réserver votre date</a>
+    </section>
+
+    <main class="services-grid">
+        <article class="service-card">
+            <h3>🎧 Mariages & Privé</h3>
+            <p>Une programmation musicale sur-mesure (Généraliste, 80's, Electro, Thématique) pour une piste de danse électrique.</p>
+        </article>
+        <article class="service-card">
+            <h3>🎤 Animation Expert</h3>
+            <p>Jeux interactifs, interventions micro soignées et gestion de l'ambiance selon vos origines et vos envies.</p>
+        </article>
+        <article class="service-card">
+            <h3>⚡ Équipement Pro</h3>
+            <p>Sonorisation haute fidélité, show laser, machine à fumée et éclairage dynamique pour une immersion totale.</p>
+        </article>
+    </main>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Vérifier ma disponibilité</h2>
+            <p>Un projet dans le 34 ? Envoyez-moi les détails de votre événement.</p>
+            
+            <form action="https://formspree.io/f/mreoraew" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="full-name">Nom complet</label>
+                    <input type="text" name="name" id="full-name" placeholder="Ex: Jean Dupont" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="_replyto" id="email" placeholder="cmikhaeil@gmail.com" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-date">Date du projet</label>
+                        <input type="date" name="date" id="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-type">Type d'événement</label>
+                        <select name="type" id="event-type" required>
+                            <option value="mariage">Mariage</option>
+                            <option value="anniversaire">Anniversaire</option>
+                            <option value="soiree-privee">Soirée Privée</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Détails (Lieu, nombre d'invités...)</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Décrivez votre projet..."></textarea>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="btn-submit">Envoyer la demande</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Chris Mike - Micro-entreprise - SIRET 75308658600033<br>
+        Disponible Vendredi & Samedi (Hérault 34)</p>
+        <p>Contact : <a href="mailto:cmkhaeil@gmail.com" style="color:var(--primary)">cmihaeil@gmail.com</a></p>
+    </footer>
+
+    <script>
+        // 1. Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 2. Gestion AJAX Formulaire
+        const form = document.querySelector('.contact-form');
+        const btnSubmit = form.querySelector('.btn-submit');
+        const originalBtnText = btnSubmit.innerText;
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            btnSubmit.disabled = true;
+            btnSubmit.innerText = "Envoi en cours...";
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    btnSubmit.innerText = "C'est envoyé ! ✓";
+                    btnSubmit.style.background = "#10b981";
+                    form.reset();
+                    setTimeout(() => {
+                        btnSubmit.disabled = false;
+                        btnSubmit.innerText = originalBtnText;
+                        btnSubmit.style.background = "var(--primary)";
+                    }, 5000);
+                } else {
+                    throw new Error();
+                }
+            } catch (error) {
+                btnSubmit.innerText = "Erreur... Réessayez";
+                btnSubmit.style.background = "#ef4444";
+                btnSubmit.disabled = false;
+            }
+        });
+
+        // 3. Animations au scroll (Intersection Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card, .contact-form').forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = "all 0.6s ease-out";
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
